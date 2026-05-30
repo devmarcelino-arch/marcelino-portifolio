@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/test', function () {
-    return 'OK';
+Route::get('/', function () {
+    return 'usuario.inicio';
 });
 
 Route::get('/projectos', function () {
