@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/', function () {
+    return view('usuario.inicio');
+});
+
 Route::get('/test', function () {
     return 'OK';
 });
