@@ -2,19 +2,49 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Portfólio</title>
 
-    <title>{{ config('app.name', 'Portifolio') }}</title>
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="Estilo/style.css">
-    <link rel="stylesheet" href="Estilo/contacto.css">
-    <link rel="stylesheet" href="Estilo/perfil.css">
+    <!-- SEO -->
+    <title>{{ config('app.name', 'Portifolio') }} | Marcelino Omar Rachide</title>
+    <meta name="description" content="Portfólio de Marcelino Omar Rachide, estudante de Engenharia Informática, desenvolvedor web e apaixonado por tecnologia.">
+    <meta name="keywords" content="Marcelino Omar, Portfólio, Laravel, PHP, Engenharia Informática, Desenvolvedor Web, Moçambique">
+    <meta name="author" content="Marcelino Omar Rachide">
+    <meta name="robots" content="index, follow">
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!-- Cor do navegador em dispositivos móveis -->
+    <meta name="theme-color" content="#0f172a">
 
-    @vite(['resources/js/app.js', 'resources/css/app.css'])
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:title" content="Marcelino Omar Rachide | Portfólio">
+    <meta property="og:description" content="Estudante de Engenharia Informática e desenvolvedor web. Conheça meus projetos, habilidades e experiência.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url('/') }}">
+    <meta property="og:image" content="{{ asset('img/preview.png') }}">
 
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Marcelino Omar Rachide | Portfólio">
+    <meta name="twitter:description" content="Estudante de Engenharia Informática e desenvolvedor web.">
+    <meta name="twitter:image" content="{{ asset('img/preview.png') }}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ asset('Estilo/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('Estilo/contacto.css') }}">
+    <link rel="stylesheet" href="{{ asset('Estilo/perfil.css') }}">
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Vite -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
 
