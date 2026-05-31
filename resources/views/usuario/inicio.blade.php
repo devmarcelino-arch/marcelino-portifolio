@@ -327,139 +327,133 @@
 
 
 <section class="seccao-projectos">
-   
+
     <div class="cabecalho-projectos">
         <span class="etiqueta">MEUS PROJECTOS</span>
         <h2 class="titulo-secao">Projetos em <span>Destaque</span></h2>
         <p>
-            Alguns dos meus trabalhos em desenvolvimento web, 
+            Alguns dos meus trabalhos em desenvolvimento web,
             aplicações inteligentes e design moderno.
         </p>
     </div>
 
-    <div class="swiper">
-        
-        <!-- Botão Anterior -->
-        <div class="swiper-button-prev botao-swiper anterior">
-            
-        </div>
+    <div class="swiper mySwiper">
 
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
+        <div class="swiper-wrapper">
 
-                <!-- Card 1 -->
-                <div class="swiper-slide">
-                    <div class="cartao-projecto">
-                        <div class="imagem-projecto">
-                            <img src="{{ asset('images/logoB2.png') }}" alt="">
-                            <span class="tech-tag">Laravel</span>
-                        </div>
-                        <div class="conteudo-projecto">
-                            <h3>Portfólio Inteligente</h3>
-                            <p>Plataforma moderna com autenticação Google e painel administrativo completo.</p>
-                            <div class="rodape-projecto">
-                                <a href="#" class="botao-projecto">Ver Projeto</a>
-                            </div>
+            <!-- Card 1 -->
+            <div class="swiper-slide">
+                <div class="cartao-projecto">
+                    <div class="imagem-projecto">
+                        <img src="{{ asset('images/logoB2.png') }}" alt="">
+                        <span class="tech-tag">Laravel</span>
+                    </div>
+                    <div class="conteudo-projecto">
+                        <h3>Portfólio Inteligente</h3>
+                        <p>Plataforma moderna com autenticação Google e painel administrativo completo.</p>
+                        <div class="rodape-projecto">
+                            <a href="#" class="botao-projecto">Ver Projeto</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Card 2 -->
-                <div class="swiper-slide">
-                    <div class="cartao-projecto">
-                        <div class="imagem-projecto">
-                            <img src="{{ asset('images/logoB5.png') }}" alt="">
-                            <span class="tech-tag">React</span>
-                        </div>
-                        <div class="conteudo-projecto">
-                            <h3>Dashboard Administrativo</h3>
-                            <p>Sistema completo para gestão de usuários e análises em tempo real.</p>
-                            <div class="rodape-projecto">
-                                <a href="#" class="botao-projecto">Ver Projeto</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="swiper-slide">
-                    <div class="cartao-projecto">
-                        <div class="imagem-projecto">
-                            <img src="{{ asset('images/logoB4.png') }}" alt="">
-                            <span class="tech-tag">IA</span>
-                        </div>
-                        <div class="conteudo-projecto">
-                            <h3>Assistente Inteligente</h3>
-                            <p>Chatbot com inteligência artificial integrado.</p>
-                            <div class="rodape-projecto">
-                                <a href="#" class="botao-projecto">Ver Projeto</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="swiper-slide">
-                    <div class="cartao-projecto">
-                        <div class="imagem-projecto">
-                            <img src="{{ asset('images/logoB6.png') }}" alt="">
-                            <span class="tech-tag">Next.js</span>
-                        </div>
-                        <div class="conteudo-projecto">
-                            <h3>E-commerce Moderno</h3>
-                            <p>Loja online completa com pagamentos integrados.</p>
-                            <div class="rodape-projecto">
-                                <a href="#" class="botao-projecto">Ver Projeto</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="swiper-slide">
-                    <div class="cartao-projecto">
-                        <div class="imagem-projecto">
-                            <img src="{{ asset('images/LogoP.png') }}" alt="">
-                            <span class="tech-tag">Vue.js</span>
-                        </div>
-                        <div class="conteudo-projecto">
-                            <h3>Gestão de Tarefas</h3>
-                            <p>Aplicação colaborativa com drag & drop.</p>
-                            <div class="rodape-projecto">
-                                <a href="#" class="botao-projecto">Ver Projeto</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="swiper-slide"> 
-                    <div class="cartao-projecto">
-                        <div class="imagem-projecto">
-                            <img src="{{ asset('images/logoB7.png') }}" alt="">
-                            <span class="tech-tag">Node.js</span>
-                        </div>
-                        <div class="conteudo-projecto">
-                            <h3>Plataforma de Cursos</h3>
-                            <p>Sistema completo de e-learning.</p>
-                            <div class="rodape-projecto">
-                                <a href="#" class="botao-projecto">Ver Projeto</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-            <div class="swiper-pagination"></div>
+
+            <!-- Card 2 -->
+            <div class="swiper-slide">
+                <div class="cartao-projecto">
+                    <div class="imagem-projecto">
+                        <img src="{{ asset('images/logoB5.png') }}" alt="">
+                        <span class="tech-tag">React</span>
+                    </div>
+                    <div class="conteudo-projecto">
+                        <h3>Dashboard Administrativo</h3>
+                        <p>Sistema completo para gestão de usuários e análises em tempo real.</p>
+                        <div class="rodape-projecto">
+                            <a href="#" class="botao-projecto">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="swiper-slide">
+                <div class="cartao-projecto">
+                    <div class="imagem-projecto">
+                        <img src="{{ asset('images/logoB4.png') }}" alt="">
+                        <span class="tech-tag">IA</span>
+                    </div>
+                    <div class="conteudo-projecto">
+                        <h3>Assistente Inteligente</h3>
+                        <p>Chatbot com inteligência artificial integrado.</p>
+                        <div class="rodape-projecto">
+                            <a href="#" class="botao-projecto">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="swiper-slide">
+                <div class="cartao-projecto">
+                    <div class="imagem-projecto">
+                        <img src="{{ asset('images/logoB6.png') }}" alt="">
+                        <span class="tech-tag">Next.js</span>
+                    </div>
+                    <div class="conteudo-projecto">
+                        <h3>E-commerce Moderno</h3>
+                        <p>Loja online completa com pagamentos integrados.</p>
+                        <div class="rodape-projecto">
+                            <a href="#" class="botao-projecto">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="swiper-slide">
+                <div class="cartao-projecto">
+                    <div class="imagem-projecto">
+                        <img src="{{ asset('images/LogoP.png') }}" alt="">
+                        <span class="tech-tag">Vue.js</span>
+                    </div>
+                    <div class="conteudo-projecto">
+                        <h3>Gestão de Tarefas</h3>
+                        <p>Aplicação colaborativa com drag & drop.</p>
+                        <div class="rodape-projecto">
+                            <a href="#" class="botao-projecto">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="swiper-slide">
+                <div class="cartao-projecto">
+                    <div class="imagem-projecto">
+                        <img src="{{ asset('images/logoB7.png') }}" alt="">
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                    <div class="conteudo-projecto">
+                        <h3>Plataforma de Cursos</h3>
+                        <p>Sistema completo de e-learning.</p>
+                        <div class="rodape-projecto">
+                            <a href="#" class="botao-projecto">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <!-- Botão Próximo -->
-        <div class="swiper-button-next botao-swiper proximo">
-            
-        </div>
+        <!-- Navegação -->
+        <div class="swiper-button-prev botao-swiper anterior"></div>
+        <div class="swiper-button-next botao-swiper proximo"></div>
+
+        <!-- Paginação -->
+        <div class="swiper-pagination"></div>
 
     </div>
+
 </section>
 
 
