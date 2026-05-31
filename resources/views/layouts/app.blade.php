@@ -33,9 +33,9 @@
     <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ asset('Estilo/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('Estilo/contacto.css') }}">
-    <link rel="stylesheet" href="{{ asset('Estilo/perfil.css') }}">
+    <link rel="stylesheet" href="Estilo/style.css">
+    <link rel="stylesheet" href="Estilo/contacto.css">
+    <link rel="stylesheet" href="Estilo/perfil.css">
 
     <!-- Boxicons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
