@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="Estilo/style.css">
     <link rel="stylesheet" href="Estilo/contacto.css">
     <link rel="stylesheet" href="Estilo/perfil.css">
+    <link rel="stylesheet" href="Estilo/projecto.css">
 
     <!-- Boxicons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -98,7 +99,40 @@
         </div>
 
     </footer>
+ <script>
+document.addEventListener("DOMContentLoaded", () => {
 
+    const menuIcon = document.getElementById("icone-menu");
+    const menu = document.querySelector(".menu-navegacao");
+    const links = document.querySelectorAll(".menu-navegacao a");
+
+    // toggle menu mobile
+    menuIcon.addEventListener("click", () => {
+        menu.classList.toggle("ativo");
+
+        menuIcon.classList.toggle("bx-menu");
+        menuIcon.classList.toggle("bx-x");
+    });
+
+    // ativar link clicado
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+
+            // remove ativo de todos
+            links.forEach(l => l.classList.remove("ativo"));
+
+            // adiciona ao clicado
+            link.classList.add("ativo");
+
+            // fecha menu mobile (opcional mas recomendado)
+            menu.classList.remove("ativo");
+            menuIcon.classList.add("bx-menu");
+            menuIcon.classList.remove("bx-x");
+        });
+    });
+
+});
+</script>
     <script src="/js/script.js"></script>
     
 </body>

@@ -40,3 +40,23 @@ window.onscroll =()=>{
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('ocultar');
 }
+
+const menuIcon = document.getElementById("icone-menu");
+const menu = document.querySelector(".menu-navegacao");
+
+menuIcon.addEventListener("click", () => {
+    menu.classList.toggle("ativo");
+
+    // troca ícone (hamburger ↔ X)
+    menuIcon.classList.toggle("bx-menu");
+    menuIcon.classList.toggle("bx-x");
+});
+
+// fechar menu ao clicar num link (UX melhor)
+document.querySelectorAll(".menu-navegacao a").forEach(link => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("ativo");
+        menuIcon.classList.add("bx-menu");
+        menuIcon.classList.remove("bx-x");
+    });
+});

@@ -16,7 +16,7 @@
                 Sou Desenvolvedor Web apaixonado por tecnologia, criando soluções 
                 com Java, PHP Laravel, JavaScript e outras tecnologias que dão vida a projetos inovadores.
                 Cada linha de código é escrita com 
-                foco em desempenho, design e experiência do utilizador. 🚀
+                foco em desempenho, design e experiência do utilizador.
             </p>
 
             <div class="caixa-botao">
@@ -29,9 +29,9 @@
         </div>
 
         <div class="inicio-social">
-
-            <a href=""><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://github.com/devmarcelino-arch/marcelino-portifolio"><i class="fab fa-github"></i></a>
+            
+            <a href="https://wa.me/258868935480"><i class='bx bxl-whatsapp'></i></a>
             <a href="https://www.youtube.com/@MozHakerDev"><i class='bx bxl-youtube'></i></a>
 
         </div>
@@ -41,45 +41,45 @@
     </section>
 
     <!-- SECCAO SOBRE -->
-    <section class="sobre" id="sobre">
+   <section class="sobre" id="sobre">
 
-        <div class="titulo-secao">
-            <h2>Sobre <span>Me</span></h2>
-
-        </div>
-
-        <div class="sobre-conteudos">
-        <div class="caixa-imagem-sobre">
-        <div class="sobre-imagem">
-
-            <img src="/images/perfil1.png" alt="">
-
-            <span class="circulo-rotacao"></span>
-
-        </div>
+    <div class="titulo-secao">
+        <h2>Sobre <span>Mim</span></h2>
     </div>
+
+    <div class="sobre-conteudos">
+
+        <!-- DIV 1 -->
+        <div class="caixa-imagem-sobre">
+
+            <div class="sobre-imagem">
+                <img src="/images/perfil1.png" alt="">
+                <span class="circulo-rotacao"></span>
+            </div>
+
+        </div>
+
+        <!-- DIV 2 -->
         <div class="sobre-conteudo">
 
             <h3>Desenvolvedor Web</h3>
 
             <p>
-                Desenvolvedor Web focado em criar aplicações modernas, seguras e eficientes.
-                Trabalho com tecnologias como Java, PHP Laravel, JavaScript e ferramentas que 
-                transformam ideias em soluções digitais reais.
-                Apaixonado por programação, inovação e pela criação de sistemas que unem desempenho, 
-                criatividade e uma excelente experiência para o utilizador.
+                Desenvolvedor Web focado em criar aplicações modernas,
+                seguras e eficientes. Trabalho com tecnologias como Java,
+                PHP Laravel, JavaScript e ferramentas que transformam ideias
+                em soluções digitais reais.
             </p>
-                <div class="caixa-botao botoes">
 
-            <a href="/perfil" class="botao">Ver mais</a>
+            <div class="caixa-botao botoes">
+                <a href="/perfil" class="botao">Ver mais</a>
+            </div>
 
         </div>
-        </div>
 
-        
-</div>
-    
-    </section>
+    </div>
+
+</section>
 
     <!-- SECCAO FORMACAO -->
     <section class="formacao" id="formacao">

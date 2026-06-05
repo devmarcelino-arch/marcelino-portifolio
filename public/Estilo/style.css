@@ -95,7 +95,7 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url("/images/logoB7.png") no-repeat;
+    background: url("/images/logo10.png") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -256,24 +256,6 @@ section{
 .inicio-social a:hover::before{
     width: 100%;
 }
-
-/* IMAGEM HOVER */
-
-.imagem-hover{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100%;
-    background: transparent;
-    transition: 3s;
-}
-
-.imagem-hover:hover{
-    background: var(--cor-fundo);
-    opacity: .2;
-}
-
 /* SOBRE */
 
 .sobre{
@@ -341,8 +323,6 @@ span{
 }
 
 .sobre-conteudo{
-    text-align: justify;
-    width: 50%;
 }
 
 .sobre-conteudo h3{
@@ -782,6 +762,43 @@ span{
     }
 }
 
+@media (max-width: 700px){
+    .sobre-conteudo p{
+        text-align: center;
+    }
+    .sobre-conteudos{
+        flex-wrap: wrap;
+    }
+    .sobre-conteudos h3{
+        text-align: center;
+    }
+    .cartao-projecto{
+        width: 300px;
+    }
+    .swiper-slide{
+        transform: translateX(700px);
+        /* border: red solid 2px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .cartao-projecto{
+        position: absolute;
+        left: 28px;
+    }
+    .sobre-conteudos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+     .sobre-conteudos h3{
+        font-size: 2.3rem;
+     }
+
+}
 @media (max-width: 520px){
 
     html{
@@ -875,11 +892,13 @@ section .seccao-projectos{
 .cabecalho-projectos h2{
     margin-bottom: 1px;
 }
+
 .botao-swiper {
     width: 55px;
     height: 55px;
     color: var(--cor-principal);
     display: flex;
+    /* border: solid red 2px; */
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
@@ -887,7 +906,6 @@ section .seccao-projectos{
     z-index: 10;
     
 }
-
 /* Cards */
 .cartao-projecto {
     background: var(--cor-fundo-secundaria);
@@ -896,16 +914,33 @@ section .seccao-projectos{
     border: 1px solid rgba(0, 171, 240, 0.15);
     height: 450px;
     transition: all 0.5s ease;
-
     /* border: red solid 2px; */
 }
 .mySwiper{
-    margin: 8px;
     /* border: 2px solid white; */
-    width: 1000px;
+    width: auto;
     height: 480px;
     overflow: hidden;
     margin: 0 60px 35px;
+     position: relative;
+    padding: 5rem 0;
+    
+}
+.botao-swiper{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: var(--cor-principal);
+}
+/* ESQUERDA fora */
+.swiper-button-prev {
+    left: -60px;
+}
+
+/* DIREITA fora */
+.swiper-button-next {
+    right: -60px;
 }
 .cartao-projecto:hover {
     transform: translateY(-15px);
@@ -984,3 +1019,66 @@ section .seccao-projectos{
 
 
 
+.menu-navegacao {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.menu-navegacao a {
+    font-size: 1.7rem;
+    color: var(--cor-texto);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+.menu-navegacao a:hover {
+    color: var(--cor-principal);
+}
+
+.menu-navegacao a.ativo {
+    color: var(--cor-principal);
+}
+
+#icone-menu {
+    font-size: 3.6rem;
+    color: var(--cor-texto);
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    #icone-menu {
+        display: block;
+    }
+
+    .menu-navegacao {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: var(--cor-fundo, #0f172a);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        display: none;
+        z-index: 1000;
+        border-top: 2px solid var(--cor-principal);
+    }
+
+    .menu-navegacao.ativo {
+        display: flex;
+    }
+
+    .menu-navegacao a {
+        margin: 1.5rem 0;
+        font-size: 1.8rem;
+        width: 100%;
+    }
+    .inicio{
+        background: var(--cor-fundo);
+    }
+
+}

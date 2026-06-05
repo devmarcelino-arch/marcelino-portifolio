@@ -13,14 +13,14 @@ Route::get('/projectos', function () {
 Route::get('/perfil', function () {
     return view('usuario.perfil');
 });
+  Route::get('/contacto', function () {
+        return view('usuario.contacto');
+    });
 
 // Área contacto (somente logado)
 Route::middleware('auth')->group(function () {
 
-    Route::get('/contacto', function () {
-        return view('usuario.contacto');
-    });
-
+  
 });
 
 // Importar rotas
