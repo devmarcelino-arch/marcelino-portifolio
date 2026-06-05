@@ -81,7 +81,7 @@
             <div class="card-projecto">
 
                 <div class="imagem-projecto">
-                    <img src="{{ asset('images/projecto.png') }}" alt="">
+                    <img src="{{ asset('images/card3.png') }}" alt="">
                     <span class="badge-tech">Laravel</span>
                 </div>
 
@@ -171,7 +171,7 @@
             <div class="card-projecto">
 
                 <div class="imagem-projecto">
-                    <img src="{{ asset('images/projecto3.jpg') }}" alt="">
+                    <img src="{{ asset('images/card1.png') }}" alt="">
                     <span class="badge-tech">Node.js</span>
                 </div>
 
@@ -212,11 +212,99 @@
 
             </div>
 
+
             <!-- Card -->
             <div class="card-projecto">
 
                 <div class="imagem-projecto">
-                    <img src="{{ asset('images/projecto4.jpg') }}" alt="">
+                    <img src="{{ asset('images/card4.png') }}" alt="">
+                    <span class="badge-tech">Unity</span>
+                </div>
+
+                <div class="conteudo-projecto">
+
+                    <div class="categoria">
+                        API Backend
+                    </div>
+
+                    <h2>
+                        Desenvolvimento de Jogos
+                    </h2>
+
+                    <p>
+                        Desenvolvimento de Jogos Desktop e Mobile
+                    </p>
+
+                    <div class="tecnologias">
+                        <span>Node</span>
+                        <span>Unity</span>
+                        <span>Mysql</span>
+                    </div>
+
+                    <div class="acoes">
+
+                        <a href="#" class="btn-demo">
+                            Ver Projeto
+                        </a>
+
+                        <a href="#" class="btn-github">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card-projecto">
+
+                <div class="imagem-projecto">
+                    <img src="{{ asset('images/card5.png') }}" alt="">
+                    <span class="badge-tech">Laravel AI</span>
+                </div>
+
+                <div class="conteudo-projecto">
+
+                    <div class="categoria">
+                        API Backend
+                    </div>
+
+                    <h2>
+                        Assistente de IA
+                    </h2>
+
+                    <p>
+                        Assistente Inteligente para tarefas automatizadas
+                    </p>
+
+                    <div class="tecnologias">
+                        <span>Node</span>
+                        <span>Unity</span>
+                        <span>Mysql</span>
+                    </div>
+
+                    <div class="acoes">
+
+                        <a href="#" class="btn-demo">
+                            Ver Projeto
+                        </a>
+
+                        <a href="#" class="btn-github">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card -->
+            <div class="card-projecto">
+
+                <div class="imagem-projecto">
+                    <img src="{{ asset('images/card2.png') }}" alt="">
                     <span class="badge-tech">Flutter</span>
                 </div>
 

@@ -345,7 +345,7 @@
             <div class="swiper-slide">
                 <div class="cartao-projecto">
                     <div class="imagem-projecto">
-                        <img src="{{ asset('images/logoB2.png') }}" alt="">
+                        <img src="{{ asset('images/portf1.png') }}" alt="">
                         <span class="tech-tag">Laravel</span>
                     </div>
                     <div class="conteudo-projecto">
@@ -362,11 +362,11 @@
             <div class="swiper-slide">
                 <div class="cartao-projecto">
                     <div class="imagem-projecto">
-                        <img src="{{ asset('images/logoB5.png') }}" alt="">
+                        <img src="{{ asset('images/LogoP.png') }}" alt="">
                         <span class="tech-tag">React</span>
                     </div>
                     <div class="conteudo-projecto">
-                        <h3>Dashboard Administrativo</h3>
+                        <h3>MedLab</h3>
                         <p>Sistema completo para gestão de usuários e análises em tempo real.</p>
                         <div class="rodape-projecto">
                             <a href="#" class="botao-projecto">Ver Projeto</a>
@@ -379,12 +379,12 @@
             <div class="swiper-slide">
                 <div class="cartao-projecto">
                     <div class="imagem-projecto">
-                        <img src="{{ asset('images/logoB4.png') }}" alt="">
+                        <img src="{{ asset('images/card4.png') }}" alt="">
                         <span class="tech-tag">IA</span>
                     </div>
                     <div class="conteudo-projecto">
-                        <h3>Assistente Inteligente</h3>
-                        <p>Chatbot com inteligência artificial integrado.</p>
+                        <h3>Unity</h3>
+                        <p>Desenvolvimento de jogos para telefones</p>
                         <div class="rodape-projecto">
                             <a href="#" class="botao-projecto">Ver Projeto</a>
                         </div>
@@ -396,11 +396,11 @@
             <div class="swiper-slide">
                 <div class="cartao-projecto">
                     <div class="imagem-projecto">
-                        <img src="{{ asset('images/logoB6.png') }}" alt="">
+                        <img src="{{ asset('images/card2.png') }}" alt="">
                         <span class="tech-tag">Next.js</span>
                     </div>
                     <div class="conteudo-projecto">
-                        <h3>E-commerce Moderno</h3>
+                        <h3>Aplicação Delivery</h3>
                         <p>Loja online completa com pagamentos integrados.</p>
                         <div class="rodape-projecto">
                             <a href="#" class="botao-projecto">Ver Projeto</a>
@@ -430,7 +430,7 @@
             <div class="swiper-slide">
                 <div class="cartao-projecto">
                     <div class="imagem-projecto">
-                        <img src="{{ asset('images/logoB7.png') }}" alt="">
+                        <img src="{{ asset('images/card1.png') }}" alt="">
                         <span class="tech-tag">Node.js</span>
                     </div>
                     <div class="conteudo-projecto">
