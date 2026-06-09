@@ -10,6 +10,8 @@
 
     
     <link rel="stylesheet" href="{{ asset('Estilo/admin.css') }}">
+    <link rel="stylesheet" href="{{ asset('Estilo/create.css') }}">
+    <link rel="stylesheet" href="{{ asset('Estilo/admin/projectoInicio.css') }}">
     
     @stack('styles')
 </head>
@@ -24,14 +26,14 @@
 
         <ul class="menu-links">
             <li>
-                <a href="#">
+                <a href="/admin">
                     
                     <i class='bx bxs-dashboard'></i>
                     <span>Dashboard</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="/admin/projetos/">
                     <i class='bx bx-folder'></i>
                     <span>Projectos</span>
                 </a>

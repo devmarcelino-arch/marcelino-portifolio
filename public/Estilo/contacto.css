@@ -3,32 +3,35 @@
     min-height:100vh;
     background:#0f172a;
     display:flex;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     align-items:center;
     justify-content:center;
-    padding:70px 20px;
+    padding:90px 30px 30px;
 }
 
 .contacto-container{
     width:100%;
     max-width:1300px;
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
+    grid-template-columns:3fr 2fr;
+    gap: 20px;
+    /* border: green solid 2px; */
     align-items:center;
 }
 
 .contacto-info{
     color:white;
+    /* border: #3b82f6 solid 3px; */
+    padding: 0 10px;
 }
 
 .foto-container{
     width:200px;
     height:200px;
-    border-radius:50%;
+    border-radius:40%;
     overflow:hidden;
-    margin-bottom:30px;
-    border:5px solid #3b82f6;
+    margin-bottom:20px;
+    border:2px solid #3b82f6;
     box-shadow:0 0 30px rgba(59,130,246,.4);
 }
 
@@ -40,21 +43,23 @@
 
 .contacto-info h1{
     font-size:42px;
-    margin-bottom:20px;
+    font-weight: 600;
+    margin-bottom:10px;
+    color: #00abf0;
     line-height:1.1;
 }
 
 .contacto-info p{
     color:#cbd5e1;
     line-height:1.8;
-    font-size:17px;
-    margin-bottom:35px;
+    font-size:18px;
+    margin-bottom:15px;
 }
 
 .contacto-links{
     display:flex;
     flex-direction:column;
-    gap:20px;
+    gap:15px;
 }
 
 .contacto-card{
@@ -105,25 +110,30 @@
 .contacto-formulario{
     display:flex;
     justify-content:center;
+    /* border: solid blue 3px; */
+    width:100%;
 }
 
 .form-card{
     width:100%;
     /* border: 2px solid red; */
     background:#1e293b;
-    padding:35px;
+    padding: 15px;
     border-radius:25px;
+    /* border: #22c55e solid 3px; */
     box-shadow:0 10px 40px rgba(0,0,0,.3);
 }
 
 .form-card h2{
-    color:white;
+    color: #00abf0;
     font-size:25px;
-    margin-bottom:30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom:15px;
 }
 
 .input-group{
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 .input-group label{
@@ -136,7 +146,7 @@
 .input-group input,
 .input-group textarea{
     width:100%;
-    padding:16px;
+    padding:15px;
     border:none;
     border-radius:14px;
     background:#0f172a;
@@ -150,25 +160,9 @@
 .input-group input:focus,
 .input-group textarea:focus{
     border-color:#3b82f6;
+    
 }
 
-button{
-    width:100%;
-    padding:18px;
-    border:none;
-    border-radius:14px;
-    background:#3b82f6;
-    color:white;
-    font-size:16px;
-    font-weight:600;
-    cursor:pointer;
-    transition:.3s;
-}
-
-button:hover{
-    background:#2563eb;
-    transform:translateY(-2px);
-}
 
 @media(max-width:992px){
 
@@ -199,6 +193,7 @@ button:hover{
 
     .contacto-info h1{
         font-size:32px;
+        
     }
 
 }

@@ -86,13 +86,15 @@
                     <div class="input-group">
                         <label>Mensagem</label>
                         <textarea name="mensagem"
-                                  rows="6"
+                                  rows="3"
                                   placeholder="Digite sua mensagem"></textarea>
                     </div>
+                    <div class="caixa-botao" style="width:100%; margin-top: 20px;">
 
-                    <button type="submit">
-                        Enviar Mensagem
-                    </button>
+                        <button type="submit" class="botao c" style="width:100%;">
+                            Enviar Mensagem
+                        </button>
+                    </div>
 
                 </form>
 

@@ -18,7 +18,7 @@
             </span>
 
             <h1>
-                Projetos Recentes
+                Projetos <span>Recentes</span>
             </h1>
 
             <p>

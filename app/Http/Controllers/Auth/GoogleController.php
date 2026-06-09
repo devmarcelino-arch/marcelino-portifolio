@@ -6,10 +6,11 @@ use App\Http\Controllers\Controller;
 use Laravel\Socialite\Facades\Socialite;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class GoogleController extends Controller
 {
-    // Redireciona para Google
     public function redirect()
     {
         return Socialite::driver('google')
@@ -17,27 +18,27 @@ class GoogleController extends Controller
             ->redirect();
     }
 
-    // Callback do Google
     public function callback()
     {
         $googleUser = Socialite::driver('google')
             ->stateless()
             ->user();
 
-        $user = User::updateOrCreate(
-            [
-                'email' => $googleUser->email
-            ],
-            [
-                'name' => $googleUser->name,
-                'password' => bcrypt('google_login'),
-                'role' => 'user'
-            ]
-        );
+        $user = User::firstOrCreate(
+        [
+            'email' => $googleUser->email
+        ],
+        [
+            'name' => $googleUser->name,
+            'password' => bcrypt(\Illuminate\Support\Str::random(20)),
+            'role' => 'user',
+            'google_id' => $googleUser->id,
+            'avatar' => $googleUser->avatar
+        ]
+     );
 
         Auth::login($user);
 
-        // Redirecionamento
         if ($user->role === 'admin') {
             return redirect('/admin');
         }

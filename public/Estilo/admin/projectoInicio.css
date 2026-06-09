@@ -1,0 +1,134 @@
+.pagina-projetos{
+    padding:20px;
+}
+
+.topo-pagina{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.topo-pagina h1{
+    color:#fff;
+}
+
+.topo-pagina p{
+    color:#94a3b8;
+}
+
+.btn-novo{
+    background:#38bdf8;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:12px;
+    display:flex;
+    gap:8px;
+    align-items:center;
+}
+
+.categoria-bloco{
+    margin-bottom:40px;
+}
+
+.titulo-categoria{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.grid-projetos{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(330px,1fr));
+    gap:20px;
+}
+
+.card-admin-projeto{
+    background:#111827;
+    border-radius:18px;
+    overflow:hidden;
+    border:1px solid #1e293b;
+}
+
+.imagem{
+    position:relative;
+    height:220px;
+}
+
+.imagem img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.badge{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#38bdf8;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+}
+
+.conteudo{
+    padding:20px;
+}
+
+.conteudo h3{
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.conteudo p{
+    color:#94a3b8;
+}
+
+.tecnologias{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:15px 0;
+}
+
+.tecnologias span{
+    background:#0f172a;
+    color:#38bdf8;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.acoes{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.btn-editar{
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:10px;
+}
+
+.btn-apagar{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.sem-projetos{
+    text-align:center;
+    padding:60px;
+    color:white;
+}
+
+.sem-projetos i{
+    font-size:70px;
+    color:#38bdf8;
+}
